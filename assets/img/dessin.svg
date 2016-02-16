@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.2"
+   width="210mm"
+   height="297mm"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <flowRoot
+       id="flowRoot2985"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Adobe Arabic;-inkscape-font-specification:Adobe Arabic"><flowRegion
+         id="flowRegion2987"><rect
+           width="311.42856"
+           height="114.28571"
+           x="55.714287"
+           y="123.79076"
+           id="rect2989"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Adobe Arabic;-inkscape-font-specification:Adobe Arabic" /></flowRegion><flowPara
+         id="flowPara2991">Ceci est un Test</flowPara></flowRoot>    <flowRoot
+       transform="translate(1.0476951,98.78817)"
+       id="flowRoot2985-1"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff00ff;fill-opacity:1;stroke:none;font-family:Adobe Arabic;-inkscape-font-specification:Adobe Arabic"><flowRegion
+         id="flowRegion2987-7"><rect
+           width="311.42856"
+           height="114.28571"
+           x="55.714287"
+           y="123.79076"
+           id="rect2989-4"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff00ff;font-family:Adobe Arabic;-inkscape-font-specification:Adobe Arabic" /></flowRegion><flowPara
+         id="flowPara2991-0">Ceci est un Autre Test</flowPara></flowRoot>  </g>
+</svg>
