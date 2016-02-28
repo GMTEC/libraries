@@ -18,7 +18,7 @@ import openfl.events.Event;
  
  typedef Coordinate = {
 	 var x:Int;
-	 var y:Int;
+	 var y:Int; 
  }
  
  typedef Region = {

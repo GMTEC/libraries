@@ -14,7 +14,7 @@ import flash.Vector;
 class ComputerIdChecking extends EventDispatcher
 {
 	var fin:FileStream;
-	var macAddress:String;
+	var macAddress:String; 
 	var finString:String;
 	public var macArrayToCompare:Array<String>;
 	public var computerMacAddresses:Array<String>;

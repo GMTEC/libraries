@@ -93,9 +93,9 @@ class WDialog extends WBase
 		//butCancel.x = W - 4;
 		//butCancel.y = 16;
 
-		butLeft 	= new JButtonFramed("ID_BUT_DIALOG_OK", 	60, H - 32, 80, 32, "IDS_NO", 	null, onButLeft);
-		butCenter	= new JButtonFramed("ID_BUT_DIALOG_CENTER", 120, H - 32, 80, 32, "IDS_BUT_OK", null, onButCenter);
-		butRight	= new JButtonFramed("ID_BUT_DIALOG_QUIT", 	180, H - 32, 80, 32, "IDS_YES", 	null, onButRight);
+		butLeft 	= new JButtonFramed("ID_BUT_DIALOG_OK", 	60, H - 32, 100, 32, "IDS_NO", 	null, onButLeft);
+		butCenter	= new JButtonFramed("ID_BUT_DIALOG_CENTER", 120, H - 32, 100, 32, "IDS_BUT_OK", null, onButCenter);
+		butRight	= new JButtonFramed("ID_BUT_DIALOG_QUIT", 	180, H - 32, 100, 32, "IDS_YES", 	null, onButRight);
 
 		butLeft.setBackground(ASColor.ALIZARIN);
 		butCenter.setBackground(ASColor.EMERALD);

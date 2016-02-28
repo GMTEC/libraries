@@ -226,7 +226,7 @@ class Images
 	public static function loadDataBase():			Bitmap{return new BitmapGlyph(new BmDataBase());}
 	public static function loadSettings(?i:Bool):	Bitmap{return new BitmapGlyph(new BmSettings(), i);}
 	public static function loadUser(i:Bool):		Bitmap{return new BitmapGlyph(new BmUser(), i);}
-	public static function loadUsers(i:Bool):		Bitmap{return new BitmapGlyph(new BmUsers(), i);}
+	public static function loadUsers(?i:Bool):		Bitmap{return new BitmapGlyph(new BmUsers(), i);}
 	public static function loadMute():				Bitmap{return new BitmapGlyph(new BmMute());}
 	public static function loadLoudSpeaker(?i:Bool):Bitmap{return new BitmapGlyph(new BmLS(), i);}
 	public static function loadAck():				Bitmap{return new BitmapGlyph(new BmAck());}

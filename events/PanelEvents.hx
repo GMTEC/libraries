@@ -99,6 +99,8 @@ class PanelEvents
 	static public inline var EVT_PROXY_CONNECTED:String 	= "EVT_PROXY_CONNECTED";
 	static public inline var EVT_BACK_COLOR_CHANGED:String 	= "evtBackColorChanged";
 
+	static public inline var EVT_ALPR_DETECTED:String 		= "EVT_ALPR_DETECTED";
+
 	public function new() 
 	{
 	}

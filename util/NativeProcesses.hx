@@ -127,7 +127,7 @@ class NativeProcesses extends EventDispatcher
 	}
 
 	static private function onErrorData(e:ProgressEvent):Void 
-	{
+	{ 
 		var ba:ByteArray = new ByteArray();
 		e.currentTarget.standardError.readBytes(ba);
 		trace (ba);
