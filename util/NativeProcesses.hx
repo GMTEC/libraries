@@ -1,11 +1,14 @@
 package util;
 
+import data.ALPRJsonData;
 import events.PanelEvents;
 import flash.desktop.NativeProcess;
 import flash.desktop.NativeProcessStartupInfo;
 import flash.events.Event;
 import flash.events.EventDispatcher;
+import flash.events.ProgressEvent;
 import flash.filesystem.File;
+import flash.utils.ByteArray;
 import flash.Vector;
 import flash.system.FSCommand;
 
@@ -83,5 +86,67 @@ class NativeProcesses extends EventDispatcher
 		proxyProcess.start(startupInfo);
 
 		return true;
+	}
+	
+	static var process:NativeProcess;
+
+	/**
+	 * 
+	 */
+	public static function startAlpr():Void 
+	{
+		trace("Starting ALPR : ");
+		var strAppli:String = 'alpr.exe';
+		var startupInfo:NativeProcessStartupInfo = new NativeProcessStartupInfo();
+		var file:File = File.applicationDirectory.resolvePath(strAppli); 
+		startupInfo.executable = file;
+
+		var cmdVec:Vector<String> = new Vector<String> ();
+		cmdVec[0] = "-c";
+		cmdVec[1] = "eu";
+		cmdVec[2] = "-j";
+		cmdVec[3] = "plate2.jpg";
+
+		startupInfo.arguments = cmdVec;
+		startupInfo.workingDirectory = File.applicationDirectory;
+
+		process		= new NativeProcess();
+		process.addEventListener(ProgressEvent.STANDARD_OUTPUT_DATA, outputData);
+		process.addEventListener(ProgressEvent.PROGRESS, onProgress);
+		process.addEventListener(ProgressEvent.STANDARD_ERROR_DATA, onErrorData);
+		process.addEventListener(ProgressEvent.STANDARD_INPUT_PROGRESS, onInputProgress);
+
+		process.start(startupInfo); 
+	}
+
+	static private function onInputProgress(e:ProgressEvent):Void 
+	{
+		var ba:ByteArray = new ByteArray();
+		e.currentTarget.standardError.inboundPipe.readBytes(ba);
+		trace (ba);
+	}
+
+	static private function onErrorData(e:ProgressEvent):Void 
+	{
+		var ba:ByteArray = new ByteArray();
+		e.currentTarget.standardError.readBytes(ba);
+		trace (ba);
+	}
+
+	static private function onProgress(e:ProgressEvent):Void 
+	{
+		trace(e);
+	}
+
+	/**
+	 * 
+	 * @param	e
+	 */
+	private static function outputData(e:ProgressEvent):Void 
+	{
+		var ba:ByteArray = new ByteArray();
+		e.currentTarget.standardOutput.readBytes(ba);
+		//trace (ba);
+		Session.alprJsonData.parse(ba.toString());
 	}
 }
